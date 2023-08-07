@@ -1,56 +1,56 @@
-# Group-7-Project-4
-
 # House Price Prediction Project
 
-## Introduction
-Welcome to the House Price Prediction Project! This project aims to predict house prices using a machine learning model. The dataset used for this project contains various features of houses and their corresponding sale prices.
+## Overview
+This project aims to predict house prices using various machine learning algorithms and techniques. The dataset contains information about different features of houses, such as the number of rooms, year built, garage area, and more, along with their corresponding sale prices. The project involves data preprocessing, data exploration, feature engineering, model building, hyperparameter tuning, and model evaluation.
+
+## Project Structure
+
+The project is organized into several steps, each implemented in a separate notebook cell:
+
+1. **Data Loading and Preprocessing:** Load the necessary libraries and import the datasets into pandas DataFrames. Perform data preprocessing tasks, such as handling missing values and dropping irrelevant columns.
+
+2. **Data Exploration and Visualization:** Explore the dataset to gain insights into the features and the target variable (sale price). Use visualizations to understand feature distributions, correlations, and relationships.
+
+3. **Data Cleaning and Handling Missing Values:** Identify and handle missing values in the dataset using appropriate techniques. Drop columns with a high percentage of missing values and fill missing values in other columns.
+
+4. **Feature Engineering:** Create new features or transform existing features to enhance the model's predictive power. Perform feature transformations like log-transforming the target variable to reduce skewness.
+
+5. **Model Building:** Build three machine learning models: a Scikit-learn Linear Regression model, a TensorFlow Neural Network model, and an XGBoost model. Train the models using the preprocessed data.
+
+6. **Model Evaluation:** Evaluate the models using various metrics, such as mean squared error (MSE) and R-squared (coefficient of determination). Measure the performance of the models on the test set.
+
+7. **Hyperparameter Tuning:** Perform hyperparameter tuning on the XGBoost model to find the best combination of hyperparameters that optimize the model's performance. Use GridSearchCV to perform a systematic search over a predefined hyperparameter grid.
+
+8. **Cross-Validation Strategies:** Implement different cross-validation strategies, such as k-fold cross-validation, to get a more reliable estimate of the XGBoost model's performance and reduce overfitting.
+
+9. **Regularization:** Implement L1 and L2 regularization techniques in the XGBoost model to prevent overfitting and improve generalization.
 
 ## Requirements
-To run the project, you will need the following:
-- Python 3.x
-- Apache Spark
-- pyspark library
-- pandas library
-- scikit-learn library
-- Jupyter Notebook
 
-## Installation
-1. Install Python 3.x from the official website: https://www.python.org/downloads/
-2. Install Apache Spark. You can download it from the official website: https://spark.apache.org/downloads.html
-3. Install required Python libraries using pip:
+To run this project, you need the following dependencies:
 
-pip install pyspark pandas scikit-learn
+- numpy
+- pandas
+- seaborn
+- matplotlib
+- tensorflow
+- xgboost
+- scikit-learn
 
+You can install these dependencies using pip:
 
-## Data
-The dataset used for this project is available in the `data` folder. It contains two CSV files: `train.csv` for training the model and `test.csv` for testing the model.
+```bash
+pip install numpy pandas seaborn matplotlib tensorflow xgboost scikit-learn
 
-## Code
-The main Jupyter Notebook for this project is `house_price_prediction.ipynb`. This notebook performs the following steps:
-1. Load the data from CSV files into a Spark DataFrame.
-2. Explore the data and handle missing values.
-3. Convert categorical features into numerical using OneHotEncoder.
-4. Normalize and standardize the numerical features.
-5. Split the data into training and testing sets.
-6. Train a regression model using Linear Regression.
-7. Evaluate the model using Root Mean Squared Error (RMSE) and R-squared.
+## Usage
+1. Clone this repository to your local machine.
+2. Open Jupyter Notebook or JupyterLab and navigate to the project directory.
+3. Open the notebook file containing the code for each step of the project.
+4. Run each cell in the notebook sequentially to execute the code and observe the results.
 
-## Running the Project
-To run the project, follow these steps:
-1. Make sure you have installed all the required dependencies as mentioned in the "Installation" section.
-2. Open Jupyter Notebook and navigate to the project directory.
-3. Open the `house_price_prediction.ipynb` notebook.
-4. Run the notebook cells to execute the code.
+Please note that you need to have the necessary datasets (train.csv and test.csv) in the "Data" directory inside the project folder for the code to work correctly.
 
-## Model Optimization
-The model optimization process involved iterative changes to the model and analyzing the resulting changes in model performance. The final model achieved an RMSE of 31037.94 and an R-squared value of 0.834.
+## Conclusion
+By following the steps outlined in this project and experimenting with different machine learning algorithms and techniques, you can create accurate predictive models for house price prediction. The analysis demonstrates the importance of data preprocessing, visualization, feature engineering, and hyperparameter tuning in building robust and accurate machine learning models.
 
-## GitHub Repository
-The project's GitHub repository contains all the necessary files and folders. Unnecessary files have been removed, and a .gitignore file is in use to exclude unwanted files from version control.
-
-## Group Presentation
-The project presentation covers all the relevant aspects, including data preprocessing, model training, optimization, and evaluation. All group members participated in the presentation.
-
-Feel free to explore the code and data to gain insights into house price prediction. If you have any questions or need further assistance, don't hesitate to reach out.
-
-Happy coding!
+Happy coding and house price prediction! 🏠
